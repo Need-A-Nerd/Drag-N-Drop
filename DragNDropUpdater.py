@@ -133,6 +133,7 @@ def download():
 	print "Files downloaded"
 	print str(count) + " file(s) failed to download because u ar an feggit"
 	outf.write(str(count) + ' file(s) failed to download\n')
+	outf.write("--------------------------------------------------------------\n")
 
 #raw_input()
 
@@ -141,7 +142,7 @@ print " "
 download()
 
 outf = open('log.txt', 'a')
-outf.write("-------------------------------------------------------------\n")
+#outf.write("-------------------------------------------------------------\n")
 
 print " "
 print "Drag N Drop has been successfully updated. log.txt has been updated."
