@@ -138,6 +138,8 @@ def download():
 #raw_input()
 
 print " "
+print " "
+print "For bug list, check README.md"
 
 download()
 
