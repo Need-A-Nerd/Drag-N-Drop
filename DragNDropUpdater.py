@@ -48,7 +48,7 @@ def download():
 	AdwareCleaner = urllib.URLopener()
 	print "  Downloading AdwareCleaner"
 	try:
-		AdwareCleaner.retrieve("http://download.bleepingcomputer.com/dl/8360ae6d977500acedc6c71011d72081/569002db/windows/security/security-utilities/a/adwcleaner/AdwCleaner.exe", "AdwareCleaner.exe")
+		AdwareCleaner.retrieve("http://www.bleepingcomputer.com/download/adwcleaner/dl/125/", "AdwareCleaner.exe")
 		print "  Done"
 		outf.write('AdwareCleaner downloaded\n')
 	except:
@@ -93,17 +93,17 @@ def download():
 		outf.write('NiniteTeam failed to download\n')
 		pass
 
-	#ccleaner = urllib.URLopener()
-	#print "  Downloading CCleaner"
-	#try:
-	#	ccleaner.retrieve("http://files.downloadnow.com/s/software/14/49/30/77/ccsetup513.exe?token=1451967159_d30ecc05e3454eb4bb3f6379984aca1b&fileName=ccsetup513.exe", "CCleaner.exe")
-	#	print "  Done"
-	#	outf.write('CCleaner downloaded\n')
-	#except:
-	#	print error
-	#	count = count + 1
-	#	outf.write('CCleaner failed to download\n')
-	#	pass
+	ccleaner = urllib.URLopener()
+	print "  Downloading CCleaner"
+	try:
+		ccleaner.retrieve("http://download.piriform.com/ccsetup514.exe", "CCleaner.exe")
+		print "  Done"
+		outf.write('CCleaner downloaded\n')
+	except:
+		print error
+		count = count + 1
+		outf.write('CCleaner failed to download\n')
+		pass
 
 	poweliks = urllib.URLopener()
 	print "  Downloading ESETPoweliksCleaner.exe"
