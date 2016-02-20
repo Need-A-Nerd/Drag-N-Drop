@@ -93,17 +93,17 @@ def download():
 		outf.write('NiniteTeam failed to download\n')
 		pass
 
-	ccleaner = urllib.URLopener()
-	print "  Downloading CCleaner"
-	try:
-		ccleaner.retrieve("http://download.piriform.com/ccsetup514.exe", "CCleaner.exe")
-		print "  Done"
-		outf.write('CCleaner downloaded\n')
-	except:
-		print error
-		count = count + 1
-		outf.write('CCleaner failed to download\n')
-		pass
+#	ccleaner = urllib.URLopener()
+#	print "  Downloading CCleaner"
+#	try:
+#		ccleaner.retrieve("http://download.piriform.com/ccsetup514.exe", "CCleaner.exe")
+#		print "  Done"
+#		outf.write('CCleaner downloaded\n')
+#	except:
+#		print error
+#		count = count + 1
+#		outf.write('CCleaner failed to download\n')
+#		pass
 
 	poweliks = urllib.URLopener()
 	print "  Downloading ESETPoweliksCleaner.exe"
