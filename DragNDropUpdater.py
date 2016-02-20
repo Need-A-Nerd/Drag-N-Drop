@@ -48,7 +48,7 @@ def download():
 	AdwareCleaner = urllib.URLopener()
 	print "  Downloading AdwareCleaner"
 	try:
-		AdwareCleaner.retrieve("http://www.bleepingcomputer.com/download/adwcleaner/dl/125/", "AdwareCleaner.exe")
+		AdwareCleaner.retrieve("http://download.bleepingcomputer.com/dl/224e2a96b211b4b031be625e653d8f63/56c8c549/windows/security/security-utilities/a/adwcleaner/AdwCleaner.exe", "AdwareCleaner.exe")
 		print "  Done"
 		outf.write('AdwareCleaner downloaded\n')
 	except:
@@ -131,7 +131,7 @@ def download():
 
 	print "  "
 	print "Files downloaded"
-	print str(count) + " file(s) failed to download because u ar an feggit"
+	print str(count) + " file(s) failed to download because because of Ray"
 	outf.write(str(count) + ' file(s) failed to download\n')
 	outf.write("--------------------------------------------------------------\n")
 
